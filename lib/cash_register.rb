@@ -10,10 +10,6 @@ class CashRegister
     @last_transaction = 0
   end
 
-  def total
-    @total
-  end
-
   def add_item(title, price, quantity = 0)
     if quantity != 0
       @total += (price * quantity)
